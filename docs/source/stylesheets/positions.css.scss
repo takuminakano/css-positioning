@@ -1,0 +1,146 @@
+body{
+    margin: 0px;
+}
+.page {
+}
+.main{
+    //height: 200vh;
+}
+.header{
+    height: 50px;
+    z-index: 10;
+}
+.sticky-header{
+    position: sticky;
+    height: 40px;
+    padding: 12px 0px;
+    top: 0px;
+    z-index: 1;
+}
+.left-sidebar{
+    position: sticky;
+    height: calc(100vh - 64px);
+    padding: 8px 16px;
+}
+@media screen and (min-width: 600px){
+    .left-sidebar{
+        width: 200px;
+        position: sticky;
+        top: 67px;
+    }
+}
+.row{
+    display: flex;
+    border: 0px;
+    margin: 0px;
+}
+.hd-main{
+    display: inline-block;
+    margin: 0px 8px;
+}
+.hd-item{
+    display: inline-block;
+    margin: 0px 8px;
+}
+.row >.to-right{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    padding: 0px 8px;
+}
+.row > .to-left{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    padding: 0px 8px;
+    margin: auto;
+}
+.overlay-bottom{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 0px auto;
+}
+.center-h{
+    margin: 0px auto;
+    text-align: center;
+}
+.center-v{
+    display: inline-block;
+    justify-content: center;
+    margin: auto 0px;
+    vertical-align: middle;
+    align-items: center;
+}
+.banner{
+    display: inline-block;
+    padding: 8px;
+}
+p {
+    margin: 0px;
+}
+h3{
+    margin: 0px;
+}
+
+.bg-black{
+    background-color: #000000;
+    color: #ffffff;
+}
+.bg-white{
+    background-color: #ffffff;
+    color: #000000;
+}
+.bg-white > * {
+    background-color: #ffffff;
+}
+
+.mg-lt-1{
+    margin-left: 8px;
+}
+.mg-rt-1{
+    margin-right: 8px;
+}
+
+.fill-parent-h{
+    height: 100%;
+}
+
+.v-split-row {
+    display: flex;
+}
+.v-split-row > .left {
+    margin-right: auto;
+}
+.v-split-row > .right{
+}
+.divider-v{
+    background-color: #F0F0F0;
+    width: 2px;
+    align-self: stretch;
+}
+.divider-h{
+    background-color: #F0F0F0;
+    height: 2px;
+    width: 100%;
+}
+
+.row-space-around {
+    justify-content: space-around;
+}
+.row-elements-mg-1 > * {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.row-elements-mg-2 > *{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.bd-b{
+    border-bottom-width: 2px;
+    border-bottom-color: #F0F0F0;
+    border-bottom-style: solid;
+}
