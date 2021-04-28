@@ -13,9 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - uses: actions/setup-ruby@v1
+    - uses: ruby/setup-ruby@master
       with:
-        ruby-version: '2.7.1'
+        ruby-version: '2.7'
     - name: Build the site with MIddleman
       run: gem install bundler; cd docs; bundle install; bundle exec middleman build
     - name: Puhlish site
