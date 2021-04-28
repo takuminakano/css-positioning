@@ -1,0 +1,25 @@
+name: Middldeman site CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.7.1'
+    - name: Build the site with MIddleman
+      run: gem install bundler; cd docs; bundle install; bundle exec middleman build
+    - name: Puhlish site
+      uses: maxheld83/ghpages@v0.2.1
+      env:
+        GH_PAT: ${{ secrets.GH_PAT }}
+        BUILD_DIR: ./docs/build
