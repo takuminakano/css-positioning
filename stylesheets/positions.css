@@ -131,3 +131,7 @@ h3 {
   border-bottom-width: 2px;
   border-bottom-color: #F0F0F0;
   border-bottom-style: solid; }
+
+.h-spacer {
+  margin-right: auto;
+  margin-left: auto; }
